@@ -2,12 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML" />
+    <meta name="description" content="Тренировка HTML" />
+    <meta name="author" content="Verkhovina Natallia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
   </head>
   <body>
     <h1>Моя первая страница</h1>
     <p><a href="./about/index.html">Об авторе</a></p>
-    <hr>
+    <hr />
+    <h2>Изображение</h2>
+    <img src="./image/images.jfif" alt="Зимний домик на озере" />
     <h2>Список</h2>
     <ol>
       <li>
@@ -44,44 +50,48 @@
     </ol>
     <h2>Таблица</h2>
     <table border="1" width="70%">
-      <tr>
-        <th>Tag</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>&lt;table&gt;</td>
-        <td>Defines a table</td>
-      </tr>
-      <tr>
-        <td>&lt;tr&gt;</td>
-        <td>Defines a row in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;th&gt;</td>
-        <td rowspan="2">Defines a "header cell"/ "cell" in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;td&gt;</td>
-      </tr>
-      <tr>
-        <td colspan="2">Rarely used</td>
-      </tr>
-      <tr>
-        <td>&lt;caption&gt;</td>
-        <td>Defines a table caption</td>
-      </tr>
-      <tr>
-        <td>&lt;thead&gt;</td>
-        <td>Groups the header content in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;tbody&gt;</td>
-        <td>Groups the body content in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;tfoot&gt;</td>
-        <td>Groups the footer content in a table</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;table&gt;</td>
+          <td>Defines a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tr&gt;</td>
+          <td>Defines a row in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;th&gt;</td>
+          <td rowspan="2">Defines a "header cell"/ "cell" in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;td&gt;</td>
+        </tr>
+        <tr>
+          <td colspan="2">Rarely used</td>
+        </tr>
+        <tr>
+          <td>&lt;caption&gt;</td>
+          <td>Defines a table caption</td>
+        </tr>
+        <tr>
+          <td>&lt;thead&gt;</td>
+          <td>Groups the header content in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tbody&gt;</td>
+          <td>Groups the body content in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tfoot&gt;</td>
+          <td>Groups the footer content in a table</td>
+        </tr>
+      </tbody>
     </table>
     <h2>Форма</h2>
     <form method="get" action="./">
@@ -99,11 +109,11 @@
         </div>
         <div>
           <label for="email">Email </label> <br />
-          <input type="text" id="email" name="email" required />
+          <input type="email" id="email" name="email" required />
         </div>
         <div>
           <label for="password">Password </label> <br />
-          <input type="text" id="password" name="password" required />
+          <input type="password" id="password" name="password" required />
         </div>
         <div>
           <label for="level">Your programming level</label> <br />
@@ -133,8 +143,8 @@
           <textarea id="comment" maxlength="500">Comment</textarea>
         </div>
         <div>
-          <label> What does HTML stand for? </label> <br />
-          <select>
+          <label for="select"> What does HTML stand for? </label> <br />
+          <select id="select" name="HTML stand">
             <option>Your answer</option>
           </select>
         </div>
