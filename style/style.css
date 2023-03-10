@@ -1,14 +1,27 @@
+/*-----fonts-----*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/*--------*/
+
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #383838;
 }
 body {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+h2{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
 /*------main-----*/
 
 .block {
@@ -39,7 +52,11 @@ body {
   align-items: center;
   gap: 48px;
 }
-
+.cart p{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
 /*-----footer-----*/
 .footer {
   background-color: #10367c;
@@ -47,6 +64,7 @@ body {
 }
 .block-footer {
   display: flex;
+
 }
 .block-footer ul {
   display: flex;
@@ -56,6 +74,12 @@ body {
 
 .block-footer a {
   color: #ffffff;
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 23px;
+}
+.footer-item a{
+  font-weight: 500;
 }
 .about-list {
   margin-right: 223px;
@@ -66,4 +90,6 @@ body {
 .block-footer + p {
   margin-top: 64px;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
 }
