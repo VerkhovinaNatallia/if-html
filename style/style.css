@@ -12,18 +12,126 @@
   font-style: normal;
   font-weight: 400;
   color: #383838;
+  box-sizing: border-box;
 }
 .content {
   max-width: 1440px;
   margin: 0 auto;
+}
+h1{
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #FFFFFF;
 }
 h2{
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
 }
-/*------main-----*/
 
+/*------header-----*/
+
+.header{
+  margin:51px 104px 0;
+display:flex;
+  gap: 684px;
+  position: absolute;
+
+}
+.logo{
+  height: 40px;
+  width: 240px;
+}
+.navigation-list{
+  display: flex;
+  gap: 48px;
+}
+.header-item{
+  display:flex;
+  gap:24px;
+}
+.header-item a{
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.header-item a:hover{
+  border-bottom:4px solid #F5BD41;
+}
+
+/*------main-----*/
+.top-section{
+  background: url('../image/фон_блок1.jpg');
+  padding: 293px 104px 0;
+  min-height: 100vh;
+}
+
+
+.form-label {
+  display: flex;
+  gap:221px;
+  margin: 100px 0 24px 24px ;
+}
+
+.form-inpyt {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1230px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+.title-top{
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.city-top {
+  width: 470px;
+  border-radius: 8px;
+  border:3px solid #ffffff;
+  color: #383838;
+  padding: 22px 0 21px 24px;
+}
+.date-top {
+  width: 260px;
+  border-radius: 8px;
+  border:3px solid #ffffff;
+  color: #383838;
+  padding: 22px 0 21px 24px;
+}
+.people-top {
+  width: 315px;
+  border-radius: 8px;
+  border:3px solid #ffffff;
+  color: #383838;
+  padding: 22px 0 21px 24px;
+}
+.button-form {
+  width: 190px;
+  background: #3077C6;
+  border:3px solid #3077C6;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+input:hover {
+  border: 3px solid #F5BD41;
+}
+.downloads-images {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 120px 0;
+}
+
+
+
+
+
+/*-----     -----*/
 .block {
   padding: 120px 200px;
   display: flex;
