@@ -32,6 +32,9 @@ h2{
 input{
   background-color: #ffffff;
 }
+.font-500{
+  font-weight: 500;
+}
 /*------header-----*/
 
 .header{
@@ -39,76 +42,85 @@ input{
   display:flex;
   justify-content: space-between;
 }
-.logo{
+.header__logo{
   height: 40px;
   width: 240px;
 }
-.navigation-list{
+.header__akaunt-svg{
+  width: 40px;
+  height: 40px;
+}
+.header__night-svg{
+  width: 30px;
+  height: 30px;
+}
+.header__list{
   display: flex;
   gap: 48px;
 }
-.header-item{
+.header__item{
   display:flex;
   gap:24px;
 }
-.header-item a{
+.header__list--link{
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
 }
-.header-item a:hover{
+.header__list--link:hover{
   border-bottom:4px solid #F5BD41;
 }
 
+
+
 /*------main-----*/
-.top-section{
+
+/*blok1*/
+.section-one{
   margin-top: -100px;
   background: url('../image/фон_блок1.jpg');
   padding: 293px 104px 0;
   min-height: 100vh;
 }
-
-
-.form-label {
+.form__label {
   display: flex;
   gap:221px;
   margin: 100px 0 24px 24px ;
 }
-
-.form-inpyt {
+.form__inpyt {
   display: flex;
   justify-content: space-between;
   max-width: 1230px;
   background: #FFFFFF;
   border-radius: 8px;
 }
-.title-top{
+.form__title{
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
 }
-.city-top {
+.form__city {
   width: 470px;
   border-radius: 8px;
   border:3px solid #ffffff;
   color: #383838;
   padding: 22px 0 21px 24px;
 }
-.date-top {
+.form__date {
   width: 260px;
   border-radius: 8px;
   border:3px solid #ffffff;
   color: #383838;
   padding: 22px 0 21px 24px;
 }
-.people-top {
+.form__people {
   width: 315px;
   border-radius: 8px;
   border:3px solid #ffffff;
   color: #383838;
   padding: 22px 0 21px 24px;
 }
-.button-form {
+.form__button {
   width: 190px;
   background: #3077C6;
   border:3px solid #3077C6;
@@ -118,37 +130,33 @@ input{
   text-align: center;
   color: #FFFFFF;
 }
-input:hover {
+.form__city:hover,
+.form__date:hover,
+.form__people:hover{
   border: 3px solid #F5BD41;
 }
-.downloads-images {
+.section-one__downloads {
   display: flex;
   justify-content: center;
   gap: 16px;
   padding: 120px 0;
 }
 
-
-
-
-
-/*-----     -----*/
-.block {
+/*block2*/
+.section-two {
   padding: 120px 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
-
-.advantages {
+.section-two__advantages {
   display: flex;
   justify-content: space-between;
   width: 1040px;
   margin-top: 88px;
 }
-
-.title-h2::after {
+.section-two__after::after {
   content: " ";
   display: block;
   width: 100px;
@@ -156,48 +164,52 @@ input:hover {
   margin: 20px auto 0;
   background-color: #f5bd41;
 }
-.cart {
+.advantages__cart {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
 }
-.cart p{
+.advantages__cart--svg{
+
+  width:100px;
+  height: 100px;
+
+}
+.advantages__cart--p{
   font-size: 24px;
   line-height: 28px;
   text-align: center;
 }
+
+
+
 /*-----footer-----*/
 .footer {
   background-color: #10367c;
   padding: 120px 270px 120px 105px;
 }
-.block-footer {
+.footer__block {
   display: flex;
-
 }
-.block-footer ul {
+.footer__block--ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-
-.block-footer a {
+.footer__block--ul a{
   color: #ffffff;
   white-space: nowrap;
   font-size: 20px;
   line-height: 23px;
 }
-.footer-item a{
-  font-weight: 500;
-}
-.about-list {
+.about {
   margin-right: 223px;
 }
-.property-types-list {
+.property {
   margin-right: 295px;
 }
-.block-footer + p {
+.footer__block--p {
   margin-top: 64px;
   color: #ffffff;
   font-size: 14px;
