@@ -76,8 +76,11 @@ input{
 /*------main-----*/
 
 /*blok1*/
-.section-one{
+main{
   margin-top: -100px;
+}
+.section-one{
+
   background: url('../image/фон_блок1.jpg');
   padding: 293px 104px 0;
   min-height: 100vh;
