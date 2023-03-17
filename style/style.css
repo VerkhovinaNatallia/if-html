@@ -82,6 +82,7 @@ input{
 /*------main-----*/
 
 /*blok1*/
+
 main{
   margin-top: -100px;
 }
@@ -184,8 +185,6 @@ main{
   width:100px;
   height: 100px;
   right: 100px;
-
-
 }
 .advantages__cart--p{
   font-size: 24px;
