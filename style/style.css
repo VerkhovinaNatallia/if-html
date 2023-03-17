@@ -14,6 +14,12 @@
   color: #383838;
   box-sizing: border-box;
 }
+.svg__none{
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 .content {
   max-width: 1440px;
   margin: 0 auto;
@@ -51,8 +57,8 @@ input{
   height: 40px;
 }
 .header__night-svg{
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 .header__list{
   display: flex;
@@ -177,6 +183,8 @@ main{
 
   width:100px;
   height: 100px;
+  right: 100px;
+
 
 }
 .advantages__cart--p{
