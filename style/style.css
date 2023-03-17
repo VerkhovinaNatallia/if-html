@@ -14,6 +14,12 @@
   color: #383838;
   box-sizing: border-box;
 }
+.svg__none{
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 .content {
   max-width: 1440px;
   margin: 0 auto;
@@ -51,8 +57,8 @@ input{
   height: 40px;
 }
 .header__night-svg{
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 .header__list{
   display: flex;
@@ -76,8 +82,12 @@ input{
 /*------main-----*/
 
 /*blok1*/
-.section-one{
+
+main{
   margin-top: -100px;
+}
+.section-one{
+
   background: url('../image/фон_блок1.jpg');
   padding: 293px 104px 0;
   min-height: 100vh;
@@ -174,7 +184,7 @@ input{
 
   width:100px;
   height: 100px;
-
+  right: 100px;
 }
 .advantages__cart--p{
   font-size: 24px;
