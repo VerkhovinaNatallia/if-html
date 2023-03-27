@@ -2,6 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 /*--------*/
 
+:root{
+  --col-widch:calc(100%/12);
+
+}
+.col-1{
+  width:var(--col-widch);
+}
+.col-2{
+  width:calc(var(--col-widch)*2);
+}
+.col-3{
+  width:calc(var(--col-widch)*3);
+}
+.col-4{
+  width:calc(var(--col-widch)*4);
+}
+.col-5{
+  width:calc(var(--col-widch)*5);
+}
+.col-6{
+  width:calc(var(--col-widch)*6);
+}
+.col-7{
+  width:calc(var(--col-widch)*7);
+}
+.col-8{
+  width:calc(var(--col-widch)*8);
+}
+.col-9{
+  width:calc(var(--col-widch)*9);
+}
+.col-10{
+  width:calc(var(--col-widch)*10);
+}
+.col-11{
+  width:calc(var(--col-widch)*11);
+}
+.col-12{
+  width:calc(var(--col-widch)*12);
+}
 
 * {
   margin: 0;
@@ -21,8 +61,10 @@
   height: 0;
 }
 .content {
-  max-width: 1440px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+
 }
 h1{
   font-weight: 500;
@@ -41,6 +83,12 @@ input{
 .font-500{
   font-weight: 500;
 }
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
 /*------header-----*/
 
 .header{
@@ -92,6 +140,7 @@ main{
   padding: 293px 104px 0;
   min-height: 100vh;
 }
+
 .form__label {
   display: flex;
   gap:221px;
@@ -154,17 +203,15 @@ main{
 
 /*block2*/
 .section-two {
-  padding: 120px 200px;
+  padding: 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
 .section-two__advantages {
-  display: flex;
-  justify-content: space-between;
-  width: 1040px;
   margin-top: 88px;
+  display: flex;
 }
 .section-two__after::after {
   content: " ";
@@ -178,13 +225,11 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
 }
 .advantages__cart--svg{
-
   width:100px;
   height: 100px;
-  right: 100px;
+
 }
 .advantages__cart--p{
   font-size: 24px;
@@ -196,11 +241,15 @@ main{
 
 /*-----footer-----*/
 .footer {
+
   background-color: #10367c;
-  padding: 120px 270px 120px 105px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .footer__block {
   display: flex;
+  gap: 20px;
+
 }
 .footer__block--ul {
   display: flex;
@@ -225,3 +274,131 @@ main{
   font-size: 14px;
   line-height: 16px;
 }
+.none{
+  display:none;}
+
+
+
+@media( max-width: 1120px) {
+  .section-two__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .col-md-1 {
+    width: var(--col-widch);
+  }
+
+  .col-md-2 {
+    width: calc(var(--col-widch) * 2);
+  }
+
+  .col-md-3 {
+    width: calc(var(--col-widch) * 3);
+  }
+
+  .col-md-4 {
+    width: calc(var(--col-widch) * 4);
+  }
+
+  .col-md-5 {
+    width: calc(var(--col-widch) * 5);
+  }
+
+  .col-md-6 {
+    width: calc(var(--col-widch) * 6);
+  }
+
+
+  .footer__block {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+  }
+}
+@media( max-width: 480px){
+  :root {
+    --col-widch: calc(100% / 6);
+  }
+  .col-sm-1{
+    width:var(--col-widch);
+  }
+  .col-sm-2{
+    width:calc(var(--col-widch)*2);
+  }
+  .col-sm-3{
+    width:calc(var(--col-widch)*3);
+  }
+  .col-sm-4{
+    width:calc(var(--col-widch)*4);
+  }
+  .col-sm-5{
+    width:calc(var(--col-widch)*5);
+  }
+  .col-sm-6{
+    width:calc(var(--col-widch)*6);
+  }
+  .none{
+    display:block;
+  }
+  .none-sm{
+    display: none;
+  }
+  .section-two {
+    padding: 24px 0 40px;
+  }
+  h2{
+  font-size: 28px;
+  line-height: 33px;
+}
+  .section-two__after::after{
+    display: none;
+  }
+  .section-two__advantages {
+    margin-top: 32px;
+  }
+  .advantages__cart {
+    margin-bottom: 32px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .footer__logo{
+    height: 19px;
+    width: 98px;
+    margin-bottom:40px;
+  }
+  .font-500{
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration-line: underline;
+  }
+  .about {
+    margin-right: 16px;
+  }
+  .property {
+    margin-right: 16px;
+  }
+  .footer__block--p{
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
