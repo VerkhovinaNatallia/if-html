@@ -149,8 +149,14 @@ input {
     color: #FFFFFF;
 }
 
-.header__list--link:hover {
-    border-bottom: 4px solid #F5BD41;
+
+.header__list--link:hover::after {
+    content: " ";
+    display: block;
+    width: 90%;
+    height: 4px;
+    background-color: #f5bd41;
+    margin: 12px auto 0;
 }
 
 .header__menu-burger {
@@ -285,6 +291,59 @@ border:none;
 }
 
 
+/*-----section-three-----*/
+.section-three{
+    background: #EAF0F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 16px;
+    gap: 104px;
+}
+.section-three__blok{
+    position: relative;
+}
+.section-three__list{
+    display: flex;
+    gap: 16px;
+}
+.section-three__item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.section-three__hotel{
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #3077C6;
+}
+.section-three__city{
+    font-size: 24px;
+    line-height: 28px;
+    color: #BFBFBF;
+}
+.section-three__images{
+    width: 100%;
+    height: 296px;
+
+}
+.strelka{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    top: 125px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+.strelka img{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
 /*-----footer-----*/
 .footer {
 
@@ -320,6 +379,7 @@ border:none;
     font-size: 14px;
     line-height: 16px;
 }
+
 .none {
     display: none;
 }
@@ -404,6 +464,7 @@ border:none;
 
     .header__item {
         gap: 15px;
+
     }
 
     .section-one {
@@ -459,7 +520,22 @@ border:none;
 
     }
 
+    .section-three__item:nth-child(4) {
+        display: none;
+    }
 
+    .section-three__images {
+        height: 230px;
+    }
+    .section-three__item{
+        width: 100%;
+    }
+    .strelka{
+        top: 93px;
+    }
+    .strelka img{
+        left: 40%;
+    }
 }
 @media ( max-width: 480px) {
     :root {
@@ -717,12 +793,48 @@ padding-left: 8px;
         margin-bottom: 32px;
     }
 
+    .section-three__item:nth-child(3){
+        display: none;
+    }
+.section-three__item:nth-child(2){
+    width: 50%;
+}
+.section-three{
+    padding: 40px 17px;
+    gap: 32px
+}
+.section-three__item{
+    gap:8px;
+    width: 50%;
+}
+    .section-three__images{
+        height: 155px;
+    }
+    .section-three__hotel{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .section-three__city{
+        font-size: 12px;
+        line-height: 14px;
+    }
+.strelka{
+    width: 28px;
+    height: 28px;
+    top: 67px;
+    right: -15px;
+}
+.strelka img{
+
+    height: 13.94px;
+}
     .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 16px;
         padding-bottom: 16px;
+        padding-left: 0;
     }
 
     .footer__logo {
